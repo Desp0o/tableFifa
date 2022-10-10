@@ -1,0 +1,191 @@
+@font-face {
+    font-family: UCL;
+    src: url('./Champions-Bold.ttf');
+}
+
+*{padding: 0; margin: 0;}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: UCL;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_up{
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team_input_section{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#input{
+    box-sizing: border-box;
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#btn{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    color: red !important;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+  .material-symbols-outlined:hover {
+    color: green;
+  }
+
+  .buttons{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.randomize{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(0, 145, 235, 0.7);
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.reload{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(0, 145, 235, 0.7);
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.randomize:hover{
+    background-color: rgb(207, 106, 239, 0.7);
+}
+
+.team_list{
+    width: 90%;
+    max-width: 90%;
+    height: 70%;
+    display: flex;
+    box-sizing: border-box;
+    line-break: strict;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.group_list{
+    width: 90%;
+    max-width: 90%;
+    height: 70%;
+    display: flex;
+    box-sizing: border-box;
+    line-break: strict;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.group_table{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.group1,
+.group2,
+.group3,
+.group4,
+.group5,
+.group6
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.hiddenVS0,
+.hiddenVS1,
+.hiddenVS2,
+.hiddenVS3,
+.hiddenVS4,
+.hiddenVS5{
+    display: none;
+}
+
+.visibleVS{
+    display: block !important;
+}
+
+.team_style{
+    width: 150px;
+    text-transform: uppercase;
+}
+
+.team_style_left{
+    width: 150px;
+    text-align: right;
+    text-transform: uppercase;
+}
