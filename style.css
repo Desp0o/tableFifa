@@ -74,6 +74,10 @@ input:focus{
     'opsz' 48
   }
 
+  .restart{
+    color: white !important;
+  }
+
   .material-symbols-outlined:hover {
     color: green;
   }
@@ -91,7 +95,7 @@ input:focus{
 
 .randomize{
     width: 50px;
-    height: 25px;
+    height: 30px;
     background-color: rgb(0, 145, 235, 0.7);
     transition: all 0.4s ease;
     border-radius: 5px;
@@ -103,7 +107,7 @@ input:focus{
 
 .reload{
     width: 50px;
-    height: 25px;
+    height: 30px;
     background-color: rgb(0, 145, 235, 0.7);
     transition: all 0.4s ease;
     border-radius: 5px;
@@ -114,6 +118,10 @@ input:focus{
 }
 
 .randomize:hover{
+    background-color: rgb(207, 106, 239, 0.7);
+}
+
+.reload:hover{
     background-color: rgb(207, 106, 239, 0.7);
 }
 
