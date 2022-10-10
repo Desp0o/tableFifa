@@ -78,7 +78,6 @@ randomizerBtn.onclick = ()=>{
         length -= 1;
         classIndex++;
         vs++;
-            
     }
 
     
