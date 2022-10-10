@@ -191,12 +191,12 @@ input:focus{
 }
 
 .team_style{
-    width: 200px;
+    width: 230px;
     text-transform: uppercase;
 }
 
 .team_style_left{
-    width: 200px;
+    width: 230px;
     text-align: right;
     text-transform: uppercase;
 }
