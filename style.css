@@ -8,10 +8,8 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url('./images/bg.png');
-    background-repeat: no-repeat;
+    background-image: url('./images/images/Untitled-1.jpg');
     background-size: cover;
-    background-position: center;
     font-family: UCL;
     color: white;
 }
@@ -191,7 +189,7 @@ input:focus{
 }
 
 .team_style{
-    width: 230px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -199,4 +197,8 @@ input:focus{
     width: 230px;
     text-align: right;
     text-transform: uppercase;
+}
+
+.round{
+    color:black;
 }
