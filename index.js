@@ -53,10 +53,14 @@ randomizerBtn.onclick = ()=>{
         let random = randomInt(length)
         let randomTeam     = document.querySelector('.team_list'+`${classIndex}`)
         let team = document.createElement('h2')
-        let vsIndex     = document.querySelectorAll('.hiddenVS'+`${vs}`)
-        vsIndex.forEach(element => {
-            element.classList.add('visibleVS')
-        });
+        while(length / 2 > vs){
+            let vsIndex     = document.querySelectorAll('.hiddenVS'+`${vs}`)
+            vsIndex.forEach(element => {
+                element.classList.add('visibleVS')
+            });
+
+            vs++;
+        }
         
             if(randomInt(length) === 0){
                 team.innerHTML = teams[0]
@@ -77,7 +81,7 @@ randomizerBtn.onclick = ()=>{
         
         length -= 1;
         classIndex++;
-        vs++;
+        
     }
 
     
