@@ -105,11 +105,26 @@ reloadBtn.onclick = ()=>{
 
 function makeGroup(indexA, indexB){
     
-        let teamName = document.createElement('h2')
-        teamName.innerHTML = indexA + ' vs ' + indexB
-        teamName.classList.add('team_style')
-        groupTable.append(teamName)
-        console.log(teamName.innerHTML);
+        let teamName1 = document.createElement('h4')
+        let teamName2 = document.createElement('h4')
+        let versus = document.createElement('h3')
+        let makeCouple = document.createElement('h3')
+
+        teamName1.innerHTML = indexA 
+        teamName2.innerHTML = indexB
+        versus.innerHTML    = 'VS'
+
+        teamName1.classList.add('team_style_left')
+        teamName2.classList.add('team_style')
+        versus.classList.add('vs')
+        makeCouple.classList.add('makeCouple')
+
+        makeCouple.append(teamName1)
+        makeCouple.append(versus)
+        makeCouple.append(teamName2)
+        groupTable.append(makeCouple)
+        
+        
     
 }
 
@@ -121,7 +136,9 @@ function groupName(number) {
 
 }
 
-randomizerBtn.onclick = ()=>{
+function randomizerFunc() {
+
+    console.log(addteam);
     let jgupi  = document.createElement('div')
     let length = addteam.length 
     let newArr = Array = []
@@ -155,20 +172,11 @@ randomizerBtn.onclick = ()=>{
 
     
 
-    
     if(newArr.length === 3){
         groupName(1)
-
-        makeGroup(newArr[0],newArr[1]) // პირველი
-        makeGroup(newArr[2],newArr[1]) // პირველი 
-        
-        groupName(2)
-
-        makeGroup(newArr[1],newArr[0]) // მეორე
-        makeGroup(newArr[1],newArr[2]) // მეორე
-        makeGroup(newArr[1],newArr[1]) // მეორე
-        
-        
+        makeGroup(newArr[0],newArr[1])
+        makeGroup(newArr[1],newArr[2])
+        makeGroup(newArr[2],newArr[0])
     }else if(newArr.length  === 4){
         groupName(1)
         makeGroup(newArr[0],newArr[1])
@@ -260,64 +268,58 @@ randomizerBtn.onclick = ()=>{
         makeGroup(newArr[4],newArr[5])
         makeGroup(newArr[6],newArr[7])
 
-        groupName(1)
+        groupName(2)
         makeGroup(newArr[0],newArr[2])
         makeGroup(newArr[1],newArr[3])
         makeGroup(newArr[4],newArr[6])
         makeGroup(newArr[5],newArr[7])
 
-        groupName(1)
+        groupName(3)
         makeGroup(newArr[0],newArr[3])
         makeGroup(newArr[1],newArr[2])
         makeGroup(newArr[4],newArr[7])
         makeGroup(newArr[5],newArr[6])
 
-        groupName(1)
+        groupName(4)
         makeGroup(newArr[0],newArr[4])
         makeGroup(newArr[1],newArr[5])
         makeGroup(newArr[2],newArr[6])
         makeGroup(newArr[3],newArr[7])
 
-        groupName(1)
+        groupName(5)
         makeGroup(newArr[0],newArr[5])
         makeGroup(newArr[1],newArr[4])
         makeGroup(newArr[3],newArr[6])
         makeGroup(newArr[2],newArr[7])
 
-        groupName(1)
+        groupName(6)
         makeGroup(newArr[0],newArr[6])
         makeGroup(newArr[1],newArr[7])
         makeGroup(newArr[2],newArr[4])
         makeGroup(newArr[3],newArr[5])
 
 
-        groupName(1)
+        groupName(7)
         makeGroup(newArr[0],newArr[7])
         makeGroup(newArr[1],newArr[6])
         makeGroup(newArr[2],newArr[5])
         makeGroup(newArr[3],newArr[4])
-        
-        
-
-        
-        
-        
-       
-
-        
-        
-        
-
-       
-        
-
-        
-
-
-
     }else{
         console.log('hey');
     }
     
+  
+
+   
 }
+
+
+
+
+randomizerBtn.onclick = ()=>{
+    randomizerFunc()
+    
+    
+}
+
 

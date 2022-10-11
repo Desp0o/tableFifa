@@ -8,8 +8,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url('./images/images/Untitled-1.jpg');
-    background-size: cover;
+    background-color: #000C64;
     font-family: UCL;
     color: white;
 }
@@ -61,12 +60,12 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #021D92;
     cursor: pointer;
 }
 
 .material-symbols-outlined {
-    color: red !important;
+    color: white !important;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -96,7 +95,7 @@ input:focus{
 .randomize{
     width: 50px;
     height: 30px;
-    background-color: rgb(0, 145, 235, 0.7);
+    background-color:#021D92;
     transition: all 0.4s ease;
     border-radius: 5px;
     display: flex;
@@ -108,7 +107,7 @@ input:focus{
 .reload{
     width: 50px;
     height: 30px;
-    background-color: rgb(0, 145, 235, 0.7);
+    background-color: #021D92;
     transition: all 0.4s ease;
     border-radius: 5px;
     display: flex;
@@ -117,13 +116,7 @@ input:focus{
     cursor: pointer;
 }
 
-.randomize:hover{
-    background-color: rgb(207, 106, 239, 0.7);
-}
 
-.reload:hover{
-    background-color: rgb(207, 106, 239, 0.7);
-}
 
 .team_list{
     width: 90%;
@@ -151,54 +144,43 @@ input:focus{
 
 .group_table{
     width: 100%;
-    height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     gap: 30px;
     margin-top: 20px;
-}
-
-.group1,
-.group2,
-.group3,
-.group4,
-.group5,
-.group6
-{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-}
-
-.hiddenVS0,
-.hiddenVS1,
-.hiddenVS2,
-.hiddenVS3,
-.hiddenVS4,
-.hiddenVS5{
-    display: none;
-}
-
-.visibleVS{
-    display: block !important;
+    padding-bottom: 40px;
 }
 
 .team_style{
+    text-align: left;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.vs{
     text-align: center;
     text-transform: uppercase;
 }
 
 .team_style_left{
-    width: 230px;
+    width: 200px;
     text-align: right;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 .round{
-    color:black;
+    color:#CEDBE4 !important;
+    margin-top: 50px;
+    border-top: 1px solid #DE16ED;
+}
+
+.makeCouple{
+    display:flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
