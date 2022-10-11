@@ -145,7 +145,7 @@ function randomizerFunc() {
     while(length > 0){
         let random = randomInt(length)           
         let gundi = document.createElement('p')  
-
+        
         // რანდომ გუნდები და დამატება მასივში
         if(random === 0){
             gundi.innerHTML = addteam[random]
@@ -167,9 +167,13 @@ function randomizerFunc() {
         
     }
 
-    
-
-    if(newArr.length === 3){
+    if(newArr.length === 1){
+        groupName(1)
+        makeGroup('Forever Alone','Forever Alone')
+    }else if(newArr.length === 2){
+        groupName(1)
+        makeGroup(newArr[0],newArr[1])
+    }else if(newArr.length === 3){
         groupName(1)
         makeGroup(newArr[0],newArr[1])
         makeGroup(newArr[1],newArr[2])
@@ -305,12 +309,7 @@ function randomizerFunc() {
         console.log('hey');
     }
     
-  
-
-   
 }
-
-
 
 
 randomizerBtn.onclick = ()=>{
