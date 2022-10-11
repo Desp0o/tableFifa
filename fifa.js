@@ -88,19 +88,16 @@ function randomInt(number) {
 // }
 
 reloadBtn.onclick = ()=>{
-    document.querySelectorAll('.team_style_left').forEach(el =>{
-        el.innerHTML = ''
-    })
-
-    document.querySelectorAll('.team_style').forEach(el =>{
-        el.innerHTML = ''
-    })
-
-    document.querySelectorAll('.vsJS').forEach(el =>{
-        el.classList.remove('visibleVS')
-    })
-
+    
     dashboard.style.display = 'flex'
+    teamInput.style.display = 'flex'
+    addBtn.style.display = 'flex'
+    randomizerBtn.style.display = 'flex'
+    reloadBtn.style.display = 'none'
+    document.querySelector('.quote').style.display = 'none'
+
+    groupTable.innerHTML = ''
+    dashboard.innerHTML = ''
 }
 
 function makeGroup(indexA, indexB){
@@ -318,8 +315,11 @@ function randomizerFunc() {
 
 randomizerBtn.onclick = ()=>{
     randomizerFunc()
-    
-    
+    teamInput.style.display = 'none'
+    addBtn.style.display = 'none'
+    randomizerBtn.style.display = 'none'
+    reloadBtn.style.display = 'flex'
+    document.querySelector('.quote').style.display = 'flex'
 }
 
 

@@ -14,6 +14,7 @@ body{
 }
 
 .container{
+    margin-top: 50px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -29,6 +30,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.quote{
+    text-transform: capitalize;
+    display: none;
 }
 
 .team_input_section{
@@ -110,10 +116,11 @@ input:focus{
     background-color: #021D92;
     transition: all 0.4s ease;
     border-radius: 5px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+   
 }
 
 
