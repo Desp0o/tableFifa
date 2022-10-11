@@ -5,16 +5,19 @@
 
 *{padding: 0; margin: 0;}
 
+
+
 body{
     width: 100%;
     height: 100vh;
     background-color: #000C64;
     font-family: UCL;
     color: white;
+    scroll-behavior: smooth;
+    
 }
 
 .container{
-    margin-top: 50px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,6 +38,7 @@ body{
 .quote{
     text-transform: capitalize;
     display: none;
+    text-align: center;
 }
 
 .team_input_section{
@@ -190,4 +194,10 @@ input:focus{
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:759px) {
+    .quote{
+        font-size: 10px;
+    }
 }

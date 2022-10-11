@@ -135,7 +135,7 @@ function groupName(number) {
 
 function randomizerFunc() {
 
-    console.log(addteam);
+    
     let jgupi  = document.createElement('div')
     let length = addteam.length 
     let newArr = Array = []
@@ -162,7 +162,7 @@ function randomizerFunc() {
 
 
         length -= 1;
-        console.log(gundi.innerHTML);
+        
 
         
     }
@@ -314,12 +314,18 @@ function randomizerFunc() {
 
 
 randomizerBtn.onclick = ()=>{
-    randomizerFunc()
-    teamInput.style.display = 'none'
-    addBtn.style.display = 'none'
-    randomizerBtn.style.display = 'none'
-    reloadBtn.style.display = 'flex'
-    document.querySelector('.quote').style.display = 'flex'
+    if(dashboard.innerHTML === ''){
+        teamInput.style.outline = 'solid'
+        teamInput.style.outlineColor  = 'red'
+        
+    }else{
+        randomizerFunc()
+        teamInput.style.display = 'none'
+        addBtn.style.display = 'none'
+        randomizerBtn.style.display = 'none'
+        reloadBtn.style.display = 'flex'
+        document.querySelector('.quote').style.display = 'flex'
+    }
 }
 
 

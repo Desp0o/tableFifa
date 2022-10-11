@@ -1,8 +1,14 @@
+@font-face {
+    font-family: UCL;
+    src: url('./Champions-Bold.ttf');
+}
+
 body{
     width: 100%;
     height: 100vh;
     background-color: #CEDBE4;
     overflow: hidden;
+    font-family: UCL;
 }
 
 .container{
@@ -25,11 +31,17 @@ img{
     color: #0E2050;
     text-transform: capitalize;
     bottom: 0;
+    font-family: UCL;
+    font-size: 12px;
 }
 
 @media (max-width:700px) {
     img{
         width: 70%;
         height: auto;
+    }
+
+    .despo{
+        font-size: 10px;
     }
 }
